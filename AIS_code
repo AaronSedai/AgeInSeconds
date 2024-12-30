@@ -1,0 +1,17 @@
+# write a program that asks the user to input their age in years, computes their age in seconds
+# and displays the results. 1 year is 365 days. 1 day is 24 hours. 1 hour is 60 minutes.
+# 1 minute is 60 seconds.
+
+def ageInSeconds():
+    age = int(input("Enter your age in years: "))
+    day = age * 365
+    hours = day * 24
+    minutes = hours * 60
+    seconds = minutes * 60
+
+    ageSeconds = day + hours + minutes + seconds
+
+    print("Your age is", age, ". That is equal to", "{:,}".format(ageSeconds), "seconds.")
+
+  // call the function
+ageInSeconds()
